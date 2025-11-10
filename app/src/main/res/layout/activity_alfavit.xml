@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alfavit">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@android:drawable/ic_menu_revert"
+        android:background="@drawable/circle_background"
+        android:contentDescription="Назад"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvAlphabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="24dp"
+            android:text="Алфавит(Дактиль)"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/btnBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/btnBack"
+                android:background="@drawable/circle_background"
+                app:layout_constraintBottom_toTopOf="@id/button_repeat">
+            <!-- Кнопки для алфавита -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/my_custom_color"
+                        android:text="А"
+                        android:textColor="#F2EEE7" />
+
+                    <Button
+                android:id="@+id/btnB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Б"
+                android:textColor="#F2EEE7" />
+
+            <Button
+                android:id="@+id/btnV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="В"
+                android:textColor="#F2EEE7" />
+
+            <Button
+                android:id="@+id/btnG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Г"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Д"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Е"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ё"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ж"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="З"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="И"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnIOI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Й"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="К"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Л"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="М"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Н"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="О"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="П"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Р"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="С"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Т"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="У"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ф"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Х"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnJT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ц"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnJTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ч"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnSH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ш"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnSHI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Щ"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnTanaM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ъ/Ь"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ы"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Э"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnYU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Ю"
+                android:textColor="#F2EEE7" />
+            <Button
+                android:id="@+id/btnYA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/my_custom_color"
+                android:text="Я"
+                android:textColor="#F2EEE7" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/button_repeat"
+        android:layout_width="369dp"
+        android:layout_height="59dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#393F50"
+        android:text="Упражнения"
+        android:textColor="#F2EEE7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

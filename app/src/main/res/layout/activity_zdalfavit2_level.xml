@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:paddingTop="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Кнопка "Назад" -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@android:drawable/ic_delete"
+        android:background="@drawable/circle_background"
+        android:contentDescription="Назад" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вопрос"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnBack"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true" />
+
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="221dp"
+        android:layout_below="@id/questionText"
+        android:layout_marginTop="140dp" />
+
+    <TextView
+        android:id="@+id/gestureExplanationText"
+        android:layout_width="173dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/videoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/text_border"
+        android:gravity="center"
+        android:text="Какой жест показан?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- Сетка вариантов ответа -->
+    <GridLayout
+        android:id="@+id/optionsGrid"
+        android:layout_width="381dp"
+        android:layout_height="223dp"
+        android:layout_below="@id/gestureExplanationText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="2"
+        android:gravity="center"
+        android:padding="16dp"
+        android:rowCount="2">
+
+        <!-- Вариант 1 -->
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:buttonTint="@color/black"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="16sp" />
+
+        <!-- Вариант 2 -->
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:buttonTint="@color/black"
+            android:gravity="center"
+            android:text="B"
+            android:textSize="16sp" />
+
+        <!-- Вариант 3 -->
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:buttonTint="@color/black"
+            android:gravity="center"
+            android:text="C"
+            android:textSize="16sp" />
+
+        <!-- Вариант 4 -->
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:buttonTint="@color/black"
+            android:gravity="center"
+            android:text="D"
+            android:textSize="16sp" />
+
+    </GridLayout>
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Разрешения -->
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:targetApi="33" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="35">
+        <activity
+            android:name=".SlovoNaDactile"
+            android:exported="false" />
+        <!-- Главная активность -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationReceiver"
+            android:exported="false" />
+        <activity
+            android:name=".Zdalfavit3Level"
+            android:exported="false" />
+        <activity
+            android:name=".Zdalfavit2Level"
+            android:exported="false" />
+        <activity
+            android:name=".tai"
+            android:exported="false" />
+        <activity
+            android:name=".ya"
+            android:exported="false" />
+        <activity
+            android:name=".sestra"
+            android:exported="false" />
+        <activity
+            android:name=".rebenok"
+            android:exported="false" />
+        <activity
+            android:name=".papa"
+            android:exported="false" />
+        <activity
+            android:name=".myj"
+            android:exported="false" />
+        <activity
+            android:name=".mama"
+            android:exported="false" />
+        <activity
+            android:name=".jena"
+            android:exported="false" />
+        <activity
+            android:name=".dryg"
+            android:exported="false" />
+        <activity
+            android:name=".dedyshka"
+            android:exported="false" />
+        <activity
+            android:name=".brat"
+            android:exported="false" />
+        <activity
+            android:name=".babushka"
+            android:exported="false" />
+        <activity
+            android:name=".horosho"
+            android:exported="false" />
+        <activity
+            android:name=".zavtra"
+            android:exported="false" />
+        <activity
+            android:name=".ytro"
+            android:exported="false" />
+        <activity
+            android:name=".yaneponimau"
+            android:exported="false" />
+        <activity
+            android:name=".vchera"
+            android:exported="false" />
+        <activity
+            android:name=".da"
+            android:exported="false" />
+        <activity
+            android:name=".spasibo"
+            android:exported="false" />
+        <activity
+            android:name=".segodnya"
+            android:exported="false" />
+        <activity
+            android:name=".Privet"
+            android:exported="false" />
+        <activity
+            android:name=".Pomogine"
+            android:exported="false" />
+        <activity
+            android:name=".Poka"
+            android:exported="false" />
+        <activity
+            android:name=".Pojailysta"
+            android:exported="false" />
+        <activity
+            android:name=".Ploho"
+            android:exported="false" />
+        <activity
+            android:name=".Net"
+            android:exported="false" />
+        <activity
+            android:name=".Kakdela"
+            android:exported="false" />
+        <activity
+            android:name=".Izvini"
+            android:exported="false" />
+        <activity
+            android:name=".Znacomstvo"
+            android:exported="false" />
+        <activity
+            android:name=".Pogoda"
+            android:exported="false" />
+        <activity
+            android:name=".Cemya"
+            android:exported="false" />
+        <activity
+            android:name=".Baza"
+            android:exported="false" />
+        <activity
+            android:name=".Poisk"
+            android:exported="false" />
+        <activity
+            android:name=".InfoRab"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitYA"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitIU"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitUI"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitAI"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitTZMZ"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitTSH"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitSH"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitCHT"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitCH"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitX"
+            android:exported="false" />
+        <activity
+            android:name=".AkfavitX"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitF"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitU"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitT"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitC"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitR"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitP"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitO"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitN"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitM"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitL"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitK"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitIO"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitI"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitZ"
+            android:exported="false" /> <!-- Главная активность -->
+        <activity
+            android:name=".AlfavitA"
+            android:exported="true" />
+        <activity
+            android:name=".Alfavit"
+            android:exported="true" />
+        <activity
+            android:name=".Zdalfavit1Level"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitB"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitD"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitG"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitV"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitE"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitEE"
+            android:exported="false" />
+        <activity
+            android:name=".AlfavitJ"
+            android:exported="false" />
+        <activity
+            android:name=".Informachiya"
+            android:exported="false" />
+        <activity
+            android:name=".Uprojneniya"
+            android:exported="false" />
+        <activity
+            android:name=".Avatar"
+            android:exported="false" />
+        <receiver
+            android:name=".Avatar$NotificationReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>
